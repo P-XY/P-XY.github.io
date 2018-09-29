@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>开启Hexo博客分支</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><div class="profile"><section id="wrapper"><header id="header"><a href="/"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>xiaoyupang</h1><h2>copy&paste is justice,国服第一复制粘贴手</h2><h1> <a href="https://github.com/XiaoyuPang"> <i class="fa fa-github"></i></a><a href="https://weibo.com/u/6681775699"> <i class="fa fa-weibo"></i></a></h1></header></section></div><section class="post" id="wrapper"><article><header><h1>开启Hexo博客分支</h1><h2 class="headline">Oct 04, 2016 5:31·702 words
+·2 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建hexo分支"><span class="toc-text">创建hexo分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#克隆hexo分支到本地"><span class="toc-text">克隆hexo分支到本地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#把hexo博客放入版本库文件夹"><span class="toc-text">把hexo博客放入版本库文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换后的安装"><span class="toc-text">更换后的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用的4条hexo命令"><span class="toc-text">常用的4条hexo命令</span></a></li></ol></div><section id="post-body"><a id="more"></a>
+<p><img src="http://oixwna9a2.bkt.clouddn.com/image/blog/git/hexo.PNG" alt=""></p>
+<p>使用hexo+github page创建的博客只能在pc端编写文章，然后push到github 生成静态网页。如果更换了电脑或者需要重装系统时怎么处理博客？我们不可能随身都携带一个u盘去备份，这样的话每更新一次博客都要拷贝一次会很烦琐。解决问题的办法很简单，原理就是利用Git的分支特性，一个分支用于备份博客，另一个用于生成静态网页。</p>
+<h2 id="创建hexo分支"><a href="#创建hexo分支" class="headerlink" title="创建hexo分支"></a>创建hexo分支</h2><blockquote>
+<p>关于hexo博客的配置及部署，在官方的文档<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">hexo doc</a>中说的非常清楚了，hexo文档中设置博客的推送分支是username.github.io版本库的master分支，我们去Github给username.github.io再建立一个分支就好了，在这里我设置的名字是hexo。（分支和库一样，里面必须不能为空，因为空的Repository是无法push或pull的，一般放置一个README.md）</p>
+</blockquote>
+<h2 id="克隆hexo分支到本地"><a href="#克隆hexo分支到本地" class="headerlink" title="克隆hexo分支到本地"></a>克隆hexo分支到本地</h2><p><code>$git clone -b hexo git@github.com:Github用户名/Github用户名.github.io.git</code> </p>
+<blockquote>
+<p>这一步是关键，<code>-b  分支名</code>用于clone指定分支。没有指定时会clone在Github上设置的default分支，一般是master。</p>
+</blockquote>
+<h2 id="把hexo博客放入版本库文件夹"><a href="#把hexo博客放入版本库文件夹" class="headerlink" title="把hexo博客放入版本库文件夹"></a>把hexo博客放入版本库文件夹</h2><blockquote>
+<p>把hexo博客加入版本控制，我们每次<code>$hexo d</code>会推送静态网页到master分支，<code>$git push</code>会把博客推送到hexo分支。</p>
+</blockquote>
+<h2 id="更换后的安装"><a href="#更换后的安装" class="headerlink" title="更换后的安装"></a>更换后的安装</h2><blockquote>
+<p>当我们更换了电脑或者系统，只要安装好Git,Node.js和hexo,再从github克隆hexo分支到本地就ok了。</p>
+</blockquote>
+<ol>
+<li>安装Git：<br><code>$sudo  apt-get install git-core</code></li>
+<li>安装Node.js：<br>执行<br><code>$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</code><br>然后重启终端执行(不重启会提示错误)<br><code>$nvm install stable</code></li>
+<li><p>安装hexo:<br><code>$npm install -g cnpm --registry=https://registre.npm.taobao.org</code><br><code>$cnpm install -g hexo-cli</code></p>
+<blockquote>
+<p>其实安装好node.js后就可以直接用<code>$npm install -g hexo-cli</code>安装hexo了，但是由于镜像源是国外的，速度会非常慢，所以这里引用淘宝分流cnpm代替了npm。</p>
+</blockquote>
+</li>
+<li><p>安装插件：<br> 执行deploy需要的插件<br><code>$cnpm install hexo-deployer-git --save</code><br> 其他（我也不了解这个命令的作用）<br><code>$cnpm install</code></p>
+</li>
+<li><p>注意事项：</p>
+<blockquote>
+<p>   使用<code>$ls -a</code>会看到有一个隐藏的.deploy_git文件夹，那是<code>$hexo d</code>生成的。在<code>$git push</code>前把它删除，或者每次clone到本地时删除才执行<code>$hexo d</code>,否则出错就是因为这个，我遇到的一个问题就是<code>$hexo d</code>无法正常提交静态文件，然后访问博客就是404页面。因为把博客文件提交到了master分支，可以到Github查看master分支验证。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="常用的4条hexo命令"><a href="#常用的4条hexo命令" class="headerlink" title="常用的4条hexo命令"></a>常用的4条hexo命令</h2><p><code>hexo g</code>#generate,生成静态文件<br><code>hexo s</code>#server,启动服务器<br><code>hexo d</code>#deploy，部署网站<br><code>hexo clean</code>#清除缓存文件</p>
+</section><nav id="post-nav"><span class="prev"><a href="/2017/02/18/web01/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"><a href="/2016/10/03/git-primary1/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/xiaoyupang"></a></div><p class="small">© Copyright forever  &nbsp;<i class="fa fa-heart" aria-hidden="true"> </i></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>
