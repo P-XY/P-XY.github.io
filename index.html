@@ -43,12 +43,21 @@
         crossChapterText: true,
       },
       //在每个页面显示GitHub编辑
+      /*
       plugins: [
         EditOnGithubPlugin.create(
           'https://github.com/xiaoyupang/xiaoyupang.github.io/blob/master/article/'
-        )
+        ),
+        null,
+        function(file) {
+          if (file.indexOf('en') === -1) {
+            return '编辑'
+          } else {
+              return 'edit on git'
+          }
+        }
       ],
-    
+      */ 
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
