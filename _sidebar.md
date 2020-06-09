@@ -1,4 +1,4 @@
-----
+<hr/>
 <h2 align="center"> 前端知识</h2>
 
 - **HTML** 
@@ -23,7 +23,7 @@
 - **前端性能调优**
     - [性能测试]()
 
-----
+<hr/>
 <h2 align="center"> 软件设计</h2>
 
 - **编程范式**
@@ -37,7 +37,7 @@
     - [JavaScript常用设计模式](Design-Patterns/design-patterns.md)
     - [设计原则和编程技巧](Design-Patterns/programme-skill.md)
 
-----
+<hr/>
 <h2 align="center"> 计算机基础</h2>
 
 - [数据结构和算法](DSA/index.md)
@@ -53,7 +53,7 @@
     - [10 搜索算法](DSA/search.md)
 - [网络协议]()
 
-----
+<hr/>
 <h2 align="center"> 其他</h2>
  
 - [高效学习](Other/study.md)
