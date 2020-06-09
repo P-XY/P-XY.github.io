@@ -1,74 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>前端小书包</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="description" content="前端小书包，前端自学博客" keywords="JavaScript;CSS;HTML;前端;学习;自学;浏览器">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="icon" href="icon.jpg" />
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+  
 </head>
 <body>
-  <div id="app">加载中...</div>
+  <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '前端教室',//文档标题，会显示在侧边栏顶部。也可以包含自定义 HTML 代码来方便地定制。
-      repo: 'https://github.com/xiaoyupang/xiaoyupang.github.io',//配置仓库地址,会在页面右上角渲染一个 GitHub Corner 挂件
-      loadSidebar: true,//加载侧边栏
-      autoHeader: false,//同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
-      hideSidebar: false,//这个选项用来完全隐藏侧边栏，侧边栏的任何内容都不会被渲染
-      //subMaxLevel:2,//自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
-      maxLevel:0, //默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。默认值 ：6
-      loadNavbar:true, //定制导航栏
-      auto2top: true,// 切换页面后是否自动跳转到页面顶部。
-      homepage: 'README.md',//设置首页文件加载路径
-      coverpage: true,//启用封面页。开启后是加载 _coverpage.md 文件
-      notFoundPage: true,//在找不到指定页面时加载_404.md:
-      //logo:'',//在侧边栏中出现的网站图标，你可以使用CSS来更改大小
-      nameLink:'/',//点击文档标题后跳转的链接地址
-      themeColor: '#fa4f4d',//替换主题色
-      //mergeNavbar: true,//小屏设备下合并导航栏到侧边栏。
-      onlyCover: false,//只在访问主页时加载封面。
-      topMargin: 90, // default: 0。让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间。当你使用 固定页头 布局时这个选项很有用，可以让你的锚点对齐标题栏。
-
-      //全文检索
-      search:{
-        placeholder:'检索'
+      repo: 'https://github.com/xiaoyupang',
+      loadSidebar:true,
+      loadNavbar:true,
+      name: '<span><div>前端小书包</div> <div><img src="icon.jpg" /><div><p style="font-size:14px;">"有人需要技术支持吗"</p><div> </div> </span>',
+      nameLink: '/',
+      subMaxLevel: 0,
+      loadNavbar: true,
+      //plugins
+      search: {
+        placeholder: '查找 🔍', // 全文检索，默认值
       },
-      //分页
+      //下一页
       pagination: {
-        previousText: '上一章节',
-        nextText: '下一章节',
+        previousText: '上一页🔺',
+        nextText: '下一页🔻',
         crossChapter: true,
         crossChapterText: true,
       },
-      //在每个页面显示GitHub编辑
-      /*
-      plugins: [
-        EditOnGithubPlugin.create(
-          'https://github.com/xiaoyupang/xiaoyupang.github.io/blob/master/article/'
-        ),
-        null,
-        function(file) {
-          if (file.indexOf('en') === -1) {
-            return '编辑'
-          } else {
-              return 'edit on git'
-          }
-        }
-      ],
-      */ 
+
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- 全文检索-->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- emoji-->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-  <!--分页-->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!--在github编辑-->
-  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 
 </body>
 </html>

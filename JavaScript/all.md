@@ -3,7 +3,7 @@
     <p> 培养结构化思维，先从宏观到微观、远到近、从外往里看，掌握原理再去深入细节，构建知识结构图</p>
 </div>
 
-## 运行原理（由外而内，登堂入室）
+# 运行原理（由外而内，登堂入室）
 
 1. 新手步入JS村庄：啊，原来你是这样的JS       
 [JavaScript 竟然没有标准库?](https://juejin.im/post/5d50ca33f265da03b2152a7e)
@@ -17,9 +17,9 @@
 4. 运行三：“执行上下文” 面纱     
 [JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)
 
-## 语言细节
+# 语言细节
 
-### 作用域（词法环境）和闭包（本质是静态作用域）
+## 作用域（词法环境）和闭包（本质是静态作用域）
 
 - 什么是作用域？        
 
@@ -53,7 +53,7 @@ this值（动态作用域，函数调用时才确定）、词法环境（静态�
 
 闭包的原理是作用域链接，子作用域能够引用父作用域
 
-### this（本质是动态作用域）    
+## this（本质是动态作用域）    
 
 - this是什么？    
 
@@ -161,7 +161,7 @@ new > call,apply,bind > 隐式绑定 > 默认绑定
 
 
 
-### 对象原型  
+## 对象原型  
 
 - 对象是什么 
 
@@ -181,16 +181,16 @@ new > call,apply,bind > 隐式绑定 > 默认绑定
 
 js的原型本质是委托
 
-## 参考文章
+# 参考文章
 
 
-### JS面向对象的设计模式，原理和设计思想？(解释原型和原型链)   
+## JS面向对象的设计模式，原理和设计思想？(解释原型和原型链)   
 - [JavaScript深入之从原型到原型链](https://github.com/mqyqingfeng/Blog/issues/2)  
 - [从__proto__和prototype来深入理解JS对象和原型链](https://github.com/creeperyang/blog/issues/9)    
 - [一张图总结继承和原型链](http://www.mollypages.org/tutorials/js.mp)    
 
 
-### 内存管理
+## 内存管理
 
 - [MDN：JavaScript 中的内存生命周期和垃圾回收机制。](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management)
 

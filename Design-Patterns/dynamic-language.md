@@ -1,5 +1,5 @@
 
-## 第一部分：面向对象的JavaScript
+# 第一部分：面向对象的JavaScript
 
 - 动态语言的特点        
 
