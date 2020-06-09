@@ -7,7 +7,7 @@
   <meta name="description" content="前端小书包，前端自学博客" keywords="JavaScript;CSS;HTML;前端;学习;自学;浏览器">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-  <link rel="icon" href="icon.jpg" />
+  <link rel="icon" href="static/icon.jpg" />
   <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
   
 </head>
@@ -16,20 +16,20 @@
   <script>
     window.$docsify = {
       repo: 'https://github.com/xiaoyupang',
-      loadSidebar:true,
-      loadNavbar:true,
+      loadSidebar:'static/_sidebar.md',
       name: `<span>
                 <div>前端小书包</div> 
-                <div> <img src="icon.jpg" /> </div>
+                <div> <img src="static/icon.jpg" /> </div>
                 <div><p style="font-size:14px;">“有人需要 <ruby><s>前端技术支持</s> <rp>(</rp><rt>招工</rt><rp>)</rp></ruby>吗？”</p> </div>
                 <div> 
-                  <span> <a href="https://github.com/xiaoyupang" target="_blank"><img height="20px" width="20px"src="https://github.com/fluidicon.png" /></a> </span>
-                  <span> <a href=mailto:xiaoyu_pang@qq.com></a> </span>
+                  <span> <a href="https://github.com/xiaoyupang" target="_blank"><img height="20px" width="20px"src="static/github-icon.png" /></a> </span>
+                  <span> <a href='static/wx.png' target="_blank"> <img src="static/wx-icon.png " height="20px" width="20px" ale="wechat" /> </a></span>
                 </div>
               </span>`,
       nameLink: '/',
       subMaxLevel: 0,
-      loadNavbar: true,
+      loadNavbar: 'static/_navbar.md',
+      homepage:'static/_homepage.md',
       //plugins
       search: {
         placeholder: '查找 🔍', // 全文检索，默认值
