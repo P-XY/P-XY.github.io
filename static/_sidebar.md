@@ -34,7 +34,7 @@
 - **设计模式**
     - [前言](Design-Patterns/readme.md)
     - [动态语言的特点](Design-Patterns/dynamic-language.md)
-    - [JavaScript常用设计模式](Design-Patterns/design-patterns.md)
+    - [JavaScript常用设计模式](Design-Patterns/patterns.md)
     - [设计原则和编程技巧](Design-Patterns/programme-skill.md)
 
 <hr/>
