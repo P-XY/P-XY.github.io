@@ -27,7 +27,7 @@
 <h2 align="center"> 软件设计</h2>
 
 - **编程范式**
-    - [ 泛型编程](Programming-Paradigm/index.md)
+    - [ 泛型编程](Programming-Paradigm/readme.md)
     - [ 函数式编程]()
     - [ 面向对象编程]()
     - [ 编程的本质]()
@@ -40,7 +40,8 @@
 <hr/>
 <h2 align="center"> 计算机基础</h2>
 
-- [数据结构和算法](DSA/index.md)
+- **数据结构和算法**
+    - [0 前言](DSA/readme.md)
     - [1 栈](DSA/stack.md)
     - [2 队列](DSA/queue.md)
     - [3 链表](DSA/linked-list.md)
