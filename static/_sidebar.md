@@ -14,9 +14,8 @@
 - **JavaScript**    
     - [JavaScript 知识地图](JavaScript/readme.md)
 - **浏览器**
-    - [客户端调试]()
-    - [浏览器工作原理]()
-    - [浏览器API]()
+    - [浏览器工作原理](Browser/principle)
+    - [浏览器API](Browser/api.md)
     - [Virtual DOM原理和实现]()
 - **前端框架**
     - [React]()
