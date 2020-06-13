@@ -13,10 +13,11 @@
     - [CSS 功能之交互](CSS/interactive.md)
 - **JavaScript**    
     - [JavaScript 知识地图](JavaScript/readme.md)
+    - 
 - **浏览器**
     - [浏览器工作原理](Browser/principle)
     - [浏览器API](Browser/api.md)
-    - [Virtual DOM原理和实现]()
+    - [Virtual DOM原理和实现](Browser/virtual-dom.md)
 - **前端框架**
     - [React]()
 - **前端性能调优**
@@ -27,7 +28,7 @@
 
 - **编程范式**
     - [ 泛型编程](Programming-Paradigm/readme.md)
-    - [ 函数式编程]()
+    - [ 函数范式](Programming-Paradigm/function-paradigm.md)
     - [ 面向对象编程]()
     - [ 编程的本质]()
 - **设计模式**
