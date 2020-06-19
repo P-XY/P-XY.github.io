@@ -87,13 +87,14 @@ console.log( Math.abs(0.1 + 0.2 - 0.3) <= Number.EPSILON); //true
 我们可以得出： 对象 > 由标识符引用的内存中的值 == 引用类型 ，这相当于说对象是个引用类型，却没说满足怎样条件的引用类型能称为对象，依旧没说明白什么是对象。
 
 
-参考 Grandy Booch《面向对象分析与设计》，对象有三个特点：
+面向对象系统的设计有不同的实现方式，常见的有基于类和基于原型（原型本身就是一个对象，所以也叫基于对象），Grandy Booch 在《面向对象分析与设计》一书中，概述了对象有三个特点：
 
 - 对象具有唯一标识性
 - 对象有状态
 - 对象具有行为
 
 对于第一点“对象具有唯一标识性”，任何不同的 JavaScript 对象都是互不相等的
+
 ```JavaScript
 var o1 = { a: 1 };
 var o2 = { a: 1 };
@@ -102,16 +103,16 @@ console.log(o1 == o2); // false
 关于对象的第二个和第三个特征“状态和行为”，不同语言会使用不同的术语来抽象描述它们，比如 C++ 中称它们为“成员变量”和“成员函数”，Java 中则称它们为“属性”和“方法”，在 JavaScript 中，将状态和行为统一抽象为“属性”(所以JavaScript的属性被设计成比别的语言更加复杂)。
 
 
-在JavaScript中，参数的传递规则是这样的：不可变类型按值传递（按值传递会产生数据的拷贝），可变类型以引用方式传递，而函数可以被保存在变量中，像其他对象一样以引用方式传递，这说明函数是一个引用类型。并且函数被设计成拥有属性和方法（比如任何函数都能使用 call 和 apply ），那么函数是满足唯一标识呢？
+在JavaScript中，参数的传递规则是这样的：不可变类型按值传递（按值传递会产生数据的拷贝），可变类型以引用方式传递，而函数可以被保存在变量中，像其他对象一样以引用方式传递，这说明函数是一个引用类型。并且函数被设计成拥有属性和方法（比如任何函数都能使用 call 和 apply ），那么函数满足唯一标识吗？
 
 ```JavaScript
 var x = function(){}
 var y = function(){}
 x === y //false,即便相同的两个函数，也不相等，函数具有唯一性
 ```
-以上，足以说明函数属于对象。那，函数属于对象，对象又是函数创建的，所以到底是先有的函数还是先有的对象，他们的原型或者说底层又有什么关系呢？请看图：[一张图总结继承和原型链](http://www.mollypages.org/tutorials/js.mp)
-
-
+以上，足以说明函数属于对象。那，函数属于对象，对象又是函数创建的，它们之间是什么关系呢？ 
+答案在JavaScript的面向对象的实现方式 -- **基于原型的面向对象设计模式**，这里预先给一张函数和原型对象的关系图：
+[JavaScript Object Layout](http://www.mollypages.org/tutorials/js.mp)
 
 参考：[JavaScript 到底是面向对象还是基于对象？](https://www.infoq.cn/article/3*8POPcRSClQh1Cp9Sqg)
 
@@ -124,5 +125,7 @@ x === y //false,即便相同的两个函数，也不相等，函数具有唯一�
 ```JavaScript
 var stringObject = new String('hello world') // 创建一个string对象
 ```
-值得注意的是，Udefined 和 Null 比较特殊不会产生对象，还有也不能对 Symbol 使用 new。
-对于以字面量形式创建的原始类型，能够使用对象的一些方法，本质上是JavaScript 做了“包装对象”，所谓包装对象，就是分别与数值、字符串、布尔值相对应的Number、String、Boolean三个原生对象。这三个原生对象可以把原始类型的值变成（包装成）对象。
+值得注意的是，Udefined 和 Null 比较特殊不会产生对象，对 Symbol 不能使用 new。
+对于以字面量形式创建的原始类型（number,string,boolean），能够使用对象的一些方法，本质上是JavaScript 做了“包装对象”。
+
+参考：[JavaScript 标准参考教程 |包装对象](https://javascript.ruanyifeng.com/stdlib/wrapper.html)
