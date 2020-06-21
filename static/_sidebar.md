@@ -14,6 +14,7 @@
 - **JavaScript**    
     - [JavaScript 知识地图](JavaScript/readme.md)
     - [JavaScript 类型系统](JavaScript/type-system.md)
+    - [JavaScript 对象系统](JavaScript/object-system.md)
 - **浏览器**
     - [浏览器工作原理](Browser/principle)
     - [浏览器API](Browser/api.md)
