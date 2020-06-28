@@ -1,4 +1,4 @@
-# JavaScript 之类型系统
+# JavaScript 类型系统
 
 JavaScript 规定了8种数据类型：
 
