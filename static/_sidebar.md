@@ -12,10 +12,10 @@
     - [CSS 功能之绘制](CSS/draw.md)
     - [CSS 功能之交互](CSS/interactive.md)
 - **JavaScript**    
-    - [JavaScript 知识地图](JavaScript/readme.md)
-    - [JavaScript 类型系统](JavaScript/type-system.md)
-    - [JavaScript 对象的幕后](JavaScript/object-system.md)
-    - [JavaScript 执行过程](JavaScript/executing-processes.md)
+    - [寻宝的捷径：JavaScript 知识地图](JavaScript/readme.md)
+    - [万物可归纳：JavaScript 数据类型](JavaScript/data-type.md)
+        - [对象的幕后：JavaScript 的对象基于原型](JavaScript/prototype-based.md)
+    - [游戏的控制逻辑：JavaScript 的执行过程](JavaScript/executing-processes.md)
 - **浏览器**
     - [浏览器工作原理](Browser/principle)
     - [浏览器API](Browser/api.md)

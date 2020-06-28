@@ -1,4 +1,4 @@
-# 学习JavaScript
+# 寻宝的捷径：JavaScript 知识地图
 
 ## 1. 知识地图
 - JavaScript

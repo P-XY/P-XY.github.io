@@ -1,4 +1,4 @@
-# JavaScript 类型系统
+# 万物可归纳：JavaScript 数据类型
 
 JavaScript 规定了8种数据类型：
 
