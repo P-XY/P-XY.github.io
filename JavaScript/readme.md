@@ -1,4 +1,5 @@
-# 寻宝的捷径：JavaScript 知识地图
+# 逻辑性与完备性：JavaScript 知识地图
+
 
 ## 1. 知识地图
 - JavaScript
