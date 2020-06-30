@@ -1,4 +1,4 @@
-<hr/>
+
 <h2 align="center"> 前端知识</h2>
 
 - **HTML** 
