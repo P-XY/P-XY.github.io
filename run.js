@@ -15,6 +15,6 @@ promise.then(
     ()=>exec('git commit -m"x"'),
     ()=>console.log( "commit error") 
 ).then(
-    ()=>exec( 'git push'),
+    ()=>exec( 'git push',console.log('push success')),
     ()=>console.log( 'push error')
 )
