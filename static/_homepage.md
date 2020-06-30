@@ -3,7 +3,7 @@
     <img style="border-radius:50%; width:30% " src="static/icon.jpeg" />
     <div style="font-size: 24px;"> Xiaoyu Pang </div><br/>
     <div>
-    📍 Shenzhen,China &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/>
+    📍 Shenzhen,China &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/>
     💌 <a href=mailto:xiaoyu_pang@qq.com>xiaoyu_pang@qq.com </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp    <br/>
      🙈  <a href="https://github.com/xiaoyupang" target="_blank"> https://github.com/xiaoyupang</a>
    </div>
@@ -29,8 +29,8 @@
 <h6> 作品二</h6>
 <div align="center">
     <h1 align="center">智能家居监控系统 </h1>
-    <p> Python，Django，树莓派，
-        <a href="https://github.com/xiaoyupang/netease-cloud-music"target="_blank" >GitHub地址</a>
+    <p> 使用 Python，Django，树莓派，
+        <a href="https://github.com/xiaoyupang/raspi"target="_blank" >GitHub地址</a>
     </p>
     <img  src="https://raw.githubusercontent.com/XiaoyuPang/raspi/master/app/static/img/home.png" alt="picture" >
     </div>
