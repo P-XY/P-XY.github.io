@@ -18,6 +18,12 @@ A：[浏览器和Node中的JavaScript是如何工作的? 可视化解释](https:
 
 ## 2. 宏任务和微任务
 
+宏任务：宿主提供的一些API，比如 http、定时、事件监听
+微任务：Promise 对象的then、catch、finally等方法
+
+- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+- [事件循环：微任务和宏任务](https://zh.javascript.info/event-loop)
+- [从一道执行题，了解浏览器中JS执行机制](https://juejin.im/post/5b0e84d0f265da08c86fa580)
 
 
 ## 3. 函数的执行
