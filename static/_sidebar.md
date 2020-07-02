@@ -8,7 +8,7 @@
     - [CSS 功能之布局](CSS/layout.md)
     - [CSS 功能之绘制](CSS/draw.md)
     - [CSS 功能之交互](CSS/interactive.md)
-- [**JavaScript🐛** ](JavaScript/readme.md)   
+- [**JavaScript👣** ](JavaScript/readme.md)   
     - [万物皆可归类：JavaScript 数据类型](JavaScript/data-type.md)
     - [创造“一切”的幕后：JavaScript 面向对象原理](JavaScript/prototype-based.md)
     - [代码运动定律：JavaScript 的执行过程](JavaScript/executing-processes.md)
