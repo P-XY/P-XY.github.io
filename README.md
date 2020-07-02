@@ -1,5 +1,5 @@
 
-<div align="center" style="box-shadow:0px 1px 3px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;padding:20px 20px">
+<div align="center" style="box-shadow:0px 1px 3px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;padding:30px 0px;">
     <img style="border-radius:50%; width:30%;; " src="static/icon.jpeg" />
     <div style="font-size: 24px;"> Xiaoyu Pang </div><br/>
     <div>
