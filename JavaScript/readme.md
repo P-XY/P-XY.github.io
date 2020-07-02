@@ -1,5 +1,4 @@
-# 逻辑性与完备性：JavaScript 知识地图
-
+# JavaScript 
 
 ## 1. 知识地图
 - JavaScript

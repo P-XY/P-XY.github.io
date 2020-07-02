@@ -37,22 +37,18 @@
         auth: 'Xiaoyu Pang. All Rights Reserved.',
         pre: '',
         style: 'text-align: center;margin-top:50px;'
-    },
-    themeColor: "#42b983",
-    darkMode: {
-      dark: {
-        background: "#f5f5f5",
-        toggleBtnBg: "#34495E",
-        textColor: "#34495E"
       },
-      light: {
-        background: "white" ,
-        toggleBtnBg: "var(--theme-color)",
-        textColor: "#34495E",
-        
-      }
-  },
-
+      //自己写的插件
+      plugins:[
+        function(hook,vm){
+          hook.beforeEach( function(html){
+            var url = 'https://github.com/xiaoyupang/xiaoyupang.github.io/blob/master/' + vm.route.file;
+            var edit = '[✏️编辑内容](' + url + ')'
+            //console.log( edit)
+            return edit + '\n' + html 
+          })
+        }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -60,6 +56,5 @@
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
-  
 </body>
 </html>
