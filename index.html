@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <link rel="icon" href="static/icon.jpeg" />
+  
+
 </head>
 <body>
   <div id="app">加载中,请稍等...</div>
@@ -19,7 +21,6 @@
       nameLink: '/',
       subMaxLevel: 0,
       loadNavbar: 'static/_navbar.md',
-      homepage:'static/_homepage.md',
       //plugins
       search: {
         placeholder: '查找 🔍', // 全文检索，默认值
@@ -37,6 +38,20 @@
         pre: '',
         style: 'text-align: center;margin-top:50px;'
     },
+    themeColor: "#42b983",
+    darkMode: {
+      dark: {
+        background: "#f5f5f5",
+        toggleBtnBg: "#34495E",
+        textColor: "#34495E"
+      },
+      light: {
+        background: "white" ,
+        toggleBtnBg: "var(--theme-color)",
+        textColor: "#34495E",
+        
+      }
+  },
 
     }
   </script>
@@ -45,5 +60,6 @@
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+  
 </body>
 </html>

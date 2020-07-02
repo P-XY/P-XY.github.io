@@ -14,10 +14,14 @@ promise
 
 //async/await 写法
 
+function exe(str){
+    return Promise.resolve().then( ()=>exec(str))
+}
+
 async function run(){
-    let add =  await Promise.resolve().then( exec( 'git add .') )
-    let commit = await add.then( exec( 'git commit -m"y"') )
-    let push = await commit.then( exec( 'git push') )
+    await exe('git add .')
+    await exe( 'git commit -m"z"') 
+    await exe( 'git push') 
     console.log( 'push success !')
 }
 
