@@ -19,10 +19,10 @@ function exe(str){
 }
 
 async function run(){
-    await exe('git add .')
-    await exe( 'git commit -m"z"') 
-    await exe( 'git push') 
-    console.log( 'push success !')
+    let add = await exe('git add .')
+    let commit = await exe( 'git commit -m"z"') 
+    let push = await exe( 'git push') 
+    return 
 }
 
 run()
