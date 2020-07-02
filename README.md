@@ -28,7 +28,7 @@
 
 <h6> 作品二</h6>
 <div align="center">
-    <h1 align="center">智能家居监控系统 </h1>
+    <h1 align="center">Raspberry Pi 智能家居监控系统 </h1>
     <p>  🐍Python & Django，🍇树莓派，
         👉<a href="https://github.com/xiaoyupang/raspi"target="_blank" >GitHub</a>
     </p>
