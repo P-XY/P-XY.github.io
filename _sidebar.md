@@ -1,14 +1,11 @@
 <h1 align="center"> 前端知识</h1>
 
 - [**HTML🌵**](HTML/)
-  - [HTML 元素篇](HTML/element.md)
-  - [HTML 语法篇](HTML/grammar.md)
-   
+    - [HTML 元素篇](HTML/element.md)
+    - [HTML 语法篇](HTML/grammar.md)
 - [**CSS🌸**](CSS/)
     - [CSS 语法篇](CSS/grammar.md)
-    - [CSS 功能之布局](CSS/layout.md)
-    - [CSS 功能之绘制](CSS/draw.md)
-    - [CSS 功能之交互](CSS/interactive.md)
+    - [CSS 功能篇](CSS/function.md)
 - [**JavaScript👣** ](JavaScript/)   
     - [万物皆可归类：JavaScript 数据类型](JavaScript/data-type.md)
     - [创造“一切”的幕后：JavaScript 面向对象原理](JavaScript/prototype-based.md)
