@@ -48,7 +48,8 @@ area 用在一张图片中部分区域需要做跳转时的情况。
 参考  [MDN | 链接类型](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Link_types)
 
 ## 4. 替换型元素
-***Q：为什么link一个CSS要用href，而引入js要用src呢？***
+>Q：为什么link一个CSS要用href，而引入js要用src呢？
+
 替换型元素，它们的特点是，引入一个外部资源来进入页面，替换掉自身的位置。
 凡是替换型元素，都是使用src属性来引用文件的，链而接型元素是使用href标签的。
 替换型元素： img、video、audio、iframe、script（注意style标签不是用src而是用href引入样式文件）

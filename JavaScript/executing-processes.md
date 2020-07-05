@@ -32,9 +32,10 @@ step 2：掌握JavaScript所有异步编程的方式（尤其是promise 和 asyn
 
 ## 3. 函数的执行
 
-关键字：闭包，作用域链，执行上下文，this
+> 关键字：闭包，作用域链，执行上下文，this
 
-- 闭包
+**闭包**
+
 ```JavaScript
 // JavaScript的函数就是闭包，或者这样理解： 闭包 = 带有执行环境的函数
 /*
@@ -42,7 +43,7 @@ step 2：掌握JavaScript所有异步编程的方式（尤其是promise 和 asyn
 JavaScript函数 = 函数 + 环境部分{ 函数里面不带 var/let/const 的变量，词法作用域[ score,this ] }
 */
 ```
-- 执行上下文：JavaScript标准把一段代码（包括函数），执行所需的所有信息定义为：“执行上下文”。
+**执行上下文**：JavaScript标准把一段代码（包括函数），执行所需的所有信息定义为：“执行上下文”。
   
 在 ES3 中，执行上下文包含三个部分：
 - scope：作用域，也常常被叫做作用域链
@@ -62,11 +63,6 @@ JavaScript函数 = 函数 + 环境部分{ 函数里面不带 var/let/const 的�
 - ScriptOrModule：执行的任务是脚本或者模块时使用，表示正在被执行的代码
 - Realm：使用的基础库和内置对象实例
 - Generator：仅生成器上下文有这个属性，表示当前生成器
-
-
-
-
-
 
 
 
