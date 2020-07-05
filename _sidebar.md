@@ -16,7 +16,7 @@
 - **前端性能调优🚀**
     - [性能测试]
 
-<hr/>
+
 <h1 align="center"> 软件设计</h1>
 
 - **编程范式👨🏻‍💻**
@@ -24,17 +24,16 @@
     - [ 函数范式](Programming-Paradigm/function-paradigm.md)
     - [ 面向对象编程]
     - [ 编程的本质]
-- **设计模式🧩**
-    - [前言](Design-Patterns/readme.md)
+- [**设计模式🧩**](Design-Patterns/README.md)
     - [动态语言的特点](Design-Patterns/dynamic-language.md)
     - [JavaScript常用设计模式](Design-Patterns/patterns.md)
     - [设计原则和编程技巧](Design-Patterns/programme-skill.md)
 
-<hr/>
+
 <h1 align="center"> 计算机基础</h1>
 
-- **数据结构和算法🧮**
-    - [0 前言](DSA/readme.md)
+- [**网络协议**]
+- [**数据结构和算法🧮**](DSA/README.md)
     - [1 栈](DSA/stack.md)
     - [2 队列](DSA/queue.md)
     - [3 链表](DSA/linked-list.md)
@@ -45,9 +44,7 @@
     - [8 算法设计技巧](DSA/algorithms-design.md)
     - [9 排序算法](DSA/sort.md)
     - [10 搜索算法](DSA/search.md)
-- [网络协议]
 
-<hr/>
 <h1 align="center"> 其他</h1>
 
   - [高效学习](Other/study.md)

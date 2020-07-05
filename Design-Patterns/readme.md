@@ -1,15 +1,15 @@
-<div align="center">
-    <h1 >《JavaScript设计模式与开发实践》 </h1>
-    <p>这是对《JavaScript设计模式与开发实践》这本书的归纳总结。</p>
-</div>
+# 设计模式
 
-# 前言 
+>这是对《JavaScript设计模式与开发实践》这本书的归纳总结。
+
+
+## 1. 前言 
 
 设计模式: 在面向对象软件设计过程中针对特定问题的简洁而优雅的解决方案。如果再通俗一点说，设
 计模式就是给面向对象软件开发中的一些好的设计取个名字。    
 
 所有设计模式的实现都遵循一条原则，即“找出程序中变化的地方，并将变化封装起来”。
 
-# 学习资料
+## 2. 其他资料
 
--[《深入设计模式》](https://refactoringguru.cn/design-patterns)
+- [《深入设计模式》](https://refactoringguru.cn/design-patterns)

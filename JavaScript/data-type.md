@@ -1,7 +1,6 @@
 # 万物皆可归类：JavaScript 数据类型
 
 JavaScript 规定了8种数据类型：
-
 1. Undefined 
 2. Null
 3. Boolean
@@ -11,13 +10,12 @@ JavaScript 规定了8种数据类型：
 7. BigInt（提案中，暂时略过）
 8. Object
 
-从变量、参数、表达式、函数返回值等，任何JavaScript代码运行过程中产生的数据，都囊括在这8种数据类型中,其中除了Obejct类型，其他7种类型都是不可变的，
-称为原始类型。原始类型 保存为简单数据值。 引用类型 保存为对象，其本质是指向内存位置的引用。接下来我们从简单到复杂重新学习一下这些类型。    
+从变量、参数、表达式、函数返回值等，任何JavaScript代码运行过程中产生的数据，都囊括在这8种数据类型中,其中除了Obejct类型，其他7种类型都是不可变的，称为原始类型。
+原始类型 保存为简单数据值。 引用类型 保存为对象，其本质是指向内存位置的引用。接下来我们从简单到复杂重新学习一下这些类型。    
 
 参考：[MDN | JavaScript 数据类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures)
 
 ##  1. Udefined 类型
-
 > Q : 为什么有的编程规范要求用 void 0 代替 undefined？
 
 描述： Undefined 类型表示未定义，它的类型只有一个值，就是 undefined，任何变量在赋值前是 Undefined 类型、值为 undefined 。一个函数如果没有使用return语句指定返回值，就会返回一个undefined值。
@@ -31,26 +29,21 @@ JavaScript 规定了8种数据类型：
 - [MDN | void 运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/void)
 
 ## 2. Null
-
 描述： Null类型也只有一个值 null，但null 是关键字，表示空，比如：变量已声明且赋值，但值为空。
 
 参考： [MDN | null](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/null)
 
 ## 3. Boolean
-
 描述： Boolean 类型有两个值， true 和 false，它用于表示逻辑意义上的真和假，同样有关键字 true 和 false 来表示两个值。
 
 ## 4. String
-
 > Q： 字符串有最大长度吗？
 
 描述： String 用于表示文本数据，不同于C语言，JavaScript 字符串是不可更改的。String 采用的是 UTF16 编码，比如符串的操作 charAt、charCodeAt、length 等方法针对的都是 UTF16 编码。 所以处理非BMP（超出 U+0000 - U+FFFF 范围）的字符时，你应该格外小心。因为根据UTF16编码，基本平面（BMP）的字符占用2个字节，辅助平面的字符占用4个字节。因此，String的最大长度，实际上是受字符串的编码长度（基本平面/辅助平面）影响的。
 
 参考：[阮一峰的网络日志: Unicode与JavaScript详解](https://www.ruanyifeng.com/blog/2014/12/unicode.html)
 
-
 ## 5. Number
-
 > Q： 0.1 + 0.2不是等于0.3么？为什么JavaScript里不是这样的？
 
 描述： JavaScript 内部，所有数字都是以64位浮点数形式储存，即使整数也是如此。所以，1与1.0是相同的，
@@ -75,7 +68,6 @@ console.log( Math.abs(0.1 + 0.2 - 0.3) <= Number.EPSILON); //true
 略
 
 ## 8. Object
-
 > Q1：为什么说 JavaScript 中函数也是对象？
 
 我们首先要知道什么是对象，维基百科上 *对象* 的词条解释：
