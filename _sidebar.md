@@ -11,15 +11,13 @@
     - [创造“一切”的幕后：JavaScript 面向对象原理](JavaScript/prototype-based.md)
     - [代码运动定律：JavaScript 的执行过程](JavaScript/executing-processes.md)
 - [**浏览器🌍**](Browser/README.md)
-- **前端框架🔨**
+- [**前端框架🔨**]
     - [React]
-- **前端性能调优🚀**
-    - [性能测试]
-
+- [**前端性能调优🚀**]
 
 <h1 align="center"> 软件设计</h1>
 
-- **编程范式👨🏻‍💻**
+- [**编程范式👨🏻‍💻**]
     - [ 泛型编程](Programming-Paradigm/readme.md)
     - [ 函数范式](Programming-Paradigm/function-paradigm.md)
     - [ 面向对象编程]
