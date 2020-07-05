@@ -52,12 +52,12 @@
 
 <hr/>
 <h1 align="center"> 其他</h1>
- 
-- [高效学习](Other/study.md)
-- [面试](Other/interview.md)
-- [工具](Other/tools.md)
-- [职业和生活](Other/life-and-career.md)
-- [软件工程师的修养]
+
+  - [高效学习](Other/study.md)
+  - [面试](Other/interview.md)
+  - [工具](Other/tools.md)
+  - [职业和生活](Other/life-and-career.md)
+  - [软件工程师的修养]
 
 
 
