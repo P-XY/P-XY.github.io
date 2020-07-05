@@ -1,6 +1,6 @@
 <h1 align="center"> 前端知识</h1>
 
-- [**HTML🌵**](HTML/README.md)
+- [**HTML🌵**](HTML/readme.md)
     - [HTML 元素篇](HTML/element.md)
     - [HTML 语法篇](HTML/grammar.md)
 - [**CSS🌸**](CSS/README.md)
