@@ -1,7 +1,7 @@
 
 
 <div align="center" style="box-shadow:0px 1px 3px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;padding:30px 0px;">
-    <img style="border-radius:50%; width:30%;" src="https://i.loli.net/2020/07/03/T8VitMguRcqaOQj.jpg" alt="avatar" />
+    <img style="border-radius:50%; width:30%;" src="https://avatars1.githubusercontent.com/u/19502724?s=460&u=b299062ccdcfd33a3ccdf86a52d26aac8e739397&v=4" alt="avatar" />
     <div style="font-size: 24px;"> Xiaoyu Pang </div><br/>
     <div>
     📍 Shenzhen,China &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/>
