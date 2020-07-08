@@ -1,12 +1,22 @@
-## 链表
-
+# 链表
 链表有单向链表、双向链表、循环链表和有序链表
 
-### 链表结构
+**链表结构**
 
 ```js
-// head -> node{ element,next} -> node{ element,next }-> .... -> undefined
-head { element, next:{
+/*
+1. 建立 Node,LinkList 类
+2. 初始化链表 new LinkList() --> {
+    head: undefined
+    push( element ){ 
+       var node =  new Node(element)
+       if( !this.head) return this.head = node
+       ... 
+    }
+    ...
+}
+3. 添加元素 --> push( element)
+head = { element, next:{
     element,next:{
         element,next:{
             element,next:{
@@ -14,31 +24,52 @@ head { element, next:{
             }
         }
     }
-} }
+}}
+4.其他操作
+
 ```
-### 单向链表
+## 1.单向链表
 
 ```js
+/*  实现方法
+
+//增
+push( element ) 链表尾部添加 node
+insert( element, index ) 向链表特定 index 插入一个新的 node
+
+//查
+getElementAt( index ) 返回链表特定 index 的 node
+indexOf( element ) 查找 element 在链表中的位置
+
+//删
+removeAt( index ) 从链表特定 index 删除一个 node
+remove( element) 从链表中删除一个特定的 element 的 node
+
+//其他
+size() 链表大小
+isEmpty() 判空
+
+*/
 class node{
     constructor( element,next=undefined ){
         this.element = element
         this.next = next
     }
 }
-class LinkedList{
+class SingleLinkedList{
     constructor(){
         this.count = 0  //链表中元素的数量
         this.head = undefined   //第一个元素的引用
     }
     push( element ){ //向链表尾部添加一个元素,有两种情况：//1.链表为空，则添加第一个元素；2.链表不为空，向其追加元素。
         let node = new Node( element)
-        if( this.head == null){ //(this.head ==null) 和( this.head === null || this.head === undefined) 是等价的
+        if( this.head == null ){ //(this.head ==null) 和( this.head === null || this.head === undefined) 是等价的
             this.head = node
             this.count++
             return
         }
         let current = this.head
-        while( current.next != null){ //(current.next != null) 和 (current.next !== undefined && current.next !== null ) 等价
+        while( current.next != null ){ //(current.next != null) 和 (current.next !== undefined && current.next !== null ) 等价
             current = current.next //理解这行代码很重要
         }
         current.next = node //current是this.head的最后一个节点的引用，改变current就是改变了this.head
@@ -55,7 +86,7 @@ class LinkedList{
             }
             return node
         }
-        return undefined //链表最后一个节点的next指向的是 undefiend，index大于this.count时因为不存在所以也是返回undefined
+        return undefined //链表最后一个节点的next指向的是 undefiend，index 大于this.count时因为不存在所以也是返回undefined
     }
     insert( element, index ){ //向特定位置插入一个新元素
         let node = new Node( element )
@@ -109,7 +140,9 @@ class LinkedList{
     }  
 }
 ```
-### 双向链表
+## 2. 双向链表
+
+
 
 ### 循环链表
 
