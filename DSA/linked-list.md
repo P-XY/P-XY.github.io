@@ -1,152 +1,148 @@
 # 链表
-链表有单向链表、双向链表、循环链表和有序链表
-
+链表有单向链表、双向链表、循环链表和有序链表     
 **链表结构**
-
 ```js
-/*
-1. 建立 Node,LinkList 类
-2. 初始化链表 new LinkList() --> {
-    head: undefined
-    push( element ){ 
-       var node =  new Node(element)
-       if( !this.head) return this.head = node
-       ... 
-    }
-    ...
-}
-3. 添加元素 --> push( element)
-head = { element, next:{
-    element,next:{
-        element,next:{
-            element,next:{
-                element,next: undefined
+head = { value, next:{
+    value,next:{
+        value,next:{
+            value,next:{
+                value,next: null
             }
         }
     }
 }}
-4.其他操作
-
 ```
 ## 1.单向链表
-
-```js
-/*  实现方法
-
-//增
-push( element ) 链表尾部添加 node
-insert( element, index ) 向链表特定 index 插入一个新的 node
-
-//查
-getElementAt( index ) 返回链表特定 index 的 node
-indexOf( element ) 查找 element 在链表中的位置
-
-//删
-removeAt( index ) 从链表特定 index 删除一个 node
-remove( element) 从链表中删除一个特定的 element 的 node
-
-//其他
-size() 链表大小
-isEmpty() 判空
-
-*/
-class node{
-    constructor( element,next=undefined ){
-        this.element = element
-        this.next = next
+``` javascript
+class Node{
+    constructor( value ){
+        this.value = value
+        this.next = null
     }
 }
 class SingleLinkedList{
     constructor(){
-        this.count = 0  //链表中元素的数量
-        this.head = undefined   //第一个元素的引用
+        this.head = null
+        this.length = 0
     }
-    push( element ){ //向链表尾部添加一个元素,有两种情况：//1.链表为空，则添加第一个元素；2.链表不为空，向其追加元素。
-        let node = new Node( element)
-        if( this.head == null ){ //(this.head ==null) 和( this.head === null || this.head === undefined) 是等价的
-            this.head = node
-            this.count++
-            return
-        }
-        let current = this.head
-        while( current.next != null ){ //(current.next != null) 和 (current.next !== undefined && current.next !== null ) 等价
-            current = current.next //理解这行代码很重要
-        }
-        current.next = node //current是this.head的最后一个节点的引用，改变current就是改变了this.head
-        this.count++
-    }
-    getElementAt( index ){  //返回特定位置的元素
-        if( index = 0 ){
+    //查
+    getNodeByIndex(index){
+        let previous = this.head
+        if(index < 0 || index > this.length - 1) return false
+        if(index = 0){
             return this.head
+        }else{
+            [...Array(index - 1).keys()].forEach( ()=>previous = previous.next )
+            return previous.next
         }
-        if( index > 0 && index < this.count){
-            let node = this.head
-            for( let i = 0; i < index; i++ ){
-                node = node.next
-            }
-            return node
-        }
-        return undefined //链表最后一个节点的next指向的是 undefiend，index 大于this.count时因为不存在所以也是返回undefined
     }
-    insert( element, index ){ //向特定位置插入一个新元素
-        let node = new Node( element )
-        if( index < 0 || index > this.count ){
-            return false
+    getNodeByValue(value){
+        let current = this.head
+        if(!this.length) return flase
+        for(let i = 0; i < this.length; i++){
+            if(current.value === value) return current
+            current = current.next
         }
-        if( index === 0 ){
+        return flase
+    }
+    getIndexByValue(value){
+        if(this.length) return -1
+        let current = this.head
+        for(let i = 0; i < this.length;i++ ){
+            if(current.value === value) return i
+            current = current.next
+        }
+        return -1 
+    }
+    //增
+    push(value){
+        const node = new Node(value)
+        let current = this.head
+        !this.head ? (this.head = node) : (()=>{ 
+            //模拟了Python的 [ i for i in range(n) ]，主要是我不想写for循环,这样比较函数式。
+            [ ...Array(this.length - 1).keys() ].forEach( ()=>current = current.next )
+            current.next = node
+        })()
+        this.length++
+    }
+    insert(value,index){
+        const node =  new Node(value)
+        //判断index是否合理
+        if(index > this.length || index < 0) return flase
+        if(index = 0){
             node.next = this.head
             this.head = node
         }else{
-            let previous = this.getElementAt( index - 1)
+            previous = this.getNodeByIndex(index - 1)
             node.next = previous.next
             previous.next = node
         }
-        this.count++
-        return true
+        this.length++    
     }
-    removeAt( index ){ //从链表特定位置删除一个元素
-        if( index < 0 || index >= this.count ){
-            return undefined
-        }
-        if( index = 0 ){
-            this.head = this.head.next
-        }else{
-            let previous = this.getElementAt( index -1 )
-            let current = previous.next
+    //删
+    removeNodeByIndex(index){
+        let previous = this.getvalueByIndex(index - 1)
+        let current = this.getvalueByIndex(index)
+        if(!current) return false
+        if(previous){
             previous.next = current.next
+        }else{
+            this.head = null
         }
-        this.count--
-        return current.element
+        this.length--
     }
-    indexOf( element ){ //元素在链表中的索引
-        let current = this.head
-        for( let i = 0; i < this.count; i++ ){
-            if(  element === current.element ){
-                return i
-            }
+    removeNodeByValue(value){
+        const index = this.getIndexByValue(value)
+        if(index < 0 ) return false
+        this.removeNodeByIndex(index)
+    }
+    //其他
+    clear(){
+        this.head = null
+        this.length = 0
+    }
+    size(){
+        return this.length
+    }
+    isEmpty(){
+        return this.length === 0
+    }
+    toString(){
+        if(this.length === 0 ) return ''
+        let objString = `${ this.head.value }`
+        let current = this.head.next
+        for(let i = 1; i < this.length; i++ ){
+            objString = `${objString},${current.value}`
             current = current.next
         }
-        return -1
+        return objString
     }
-    remove( element){   //从链表中删除一个元素
-        const index = this.indexOf( element )
-        return this.removeAt( index )
-    }
-    size(){ //链表大小
-        return this.count
-    }
-    isEmpty(){ //判空
-        retrn this.size() === 0
-    }  
 }
 ```
 ## 2. 双向链表
+```js
+class DoubleNode {
+    constructor(value){
+        this.value = value
+        this.next = null
+        this.prev = null
+    }
+}
+class DoubleLinkList {
+    constructor(){
+        this.head = null
+        this.length = 0
+        this.tail = null
+    }
+}
+```
 
 
 
-### 循环链表
 
-### 有序链表
+## 3. 循环链表
+
+## 4. 有序链表
 
 
 

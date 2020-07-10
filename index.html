@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <link rel="icon" href="https://avatars1.githubusercontent.com/u/19502724?s=460&u=b299062ccdcfd33a3ccdf86a52d26aac8e739397&v=4" />
+  <link href="https://cdn.bootcdn.net/ajax/libs/prism/1.20.0/themes/prism.css" rel="stylesheet">
 </head>
 <body>
   <div id="app">加载中,请稍等 😀...</div>
@@ -15,10 +16,11 @@
     window.$docsify = {
       auto2top: true,
       repo: '',
-      loadSidebar:true,
+      loadSidebar:'static/_sidebar.md',
       maxLevel:4,
       subMaxLevel: 0,
-      loadNavbar: true,
+      loadNavbar: 'static/_navbar.md',
+      homepage:'static/_index.md',
       //plugins
       search: {
         placeholder: '查找 🔍', // 全文检索，默认值
@@ -35,6 +37,11 @@
         auth: 'Xiaoyu Pang. All Rights Reserved.',
         pre: '',
         style: 'text-align: center;margin-top:50px;'
+      },
+      copyCode: {
+        buttonText : '复制代码',
+        errorText  : 'Error',
+        successText: '已复制到剪贴板'
       },
       //自己写的插件
       plugins:[
@@ -54,5 +61,7 @@
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+
 </body>
 </html>
