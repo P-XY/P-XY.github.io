@@ -45,10 +45,11 @@ function reverseList(head){
 ```js
 function reverseList(head){
     if(!head || !head.next) return head
-    let reverse = reverseList(head.next) //假设head.next之后的链表已经反转
+    //head.next之后的链表已经反转，并返回最后一个节点
+    let reverse = reverseList(head.next) 
     head.next.next = head
     head.next = null
-    return reverse
+    return reverse //实际上保存的是链表的最后一个节点
     
 ```
 

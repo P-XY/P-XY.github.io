@@ -26,7 +26,9 @@
 
 
 
-## 1. 数组栈
+## 栈的实现 
+
+**数组栈**
 ```js
 class Stack {
     constructor(){
@@ -52,7 +54,7 @@ class Stack {
     }
 }
 ```
-## 2. JavaScript对象栈
+**JavaScript对象栈**
 
 ```js
 class Stack{
@@ -92,3 +94,4 @@ class Stack{
 
 ```
 
+**链表实现栈**
