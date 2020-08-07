@@ -23,7 +23,7 @@
 - [猴子都能懂的Git入门](https://backlog.com/git-tutorial/cn/)
 - [Git CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf)
 - [vscode快捷键](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-- [Markdown 语法介绍](http://younghz.github.io/Markdown/)
+- [Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html)
 - [GitBook简明教程](http://www.chengweiyang.cn/gitbook/)
 
 

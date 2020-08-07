@@ -1,7 +1,7 @@
 # 链表
 
 
-> 写链表代码的技巧：
+**写链表代码的技巧：**    
 1. 理解指针或引用的含义
 2. 警惕指针丢失和内存泄漏
 3. 利用哨兵简化实现难度(解决边界问题)
@@ -9,14 +9,21 @@
 5. 举例画图，辅助思考
 6. 多写多练，没有捷径
 
-> 链表常用操作
-- [206 单链表反转](https://leetcode-cn.com/problems/reverse-linked-list/)
-- [141 链表中环的检测](https://leetcode-cn.com/problems/linked-list-cycle/)
-- [21 两个有序的链表合并]()
-- [19 删除链表倒数第n个节点]()
-- [876 求链表的中间节点]()
+**极客时间：算法通关40讲 题目**
 
+- [206 单链表反转](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [24 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+- [141 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+- [142 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+- [25 K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+
+**极客时间：数据结构与算法之美 题目**
+- 206 单链表反转
+- 141 环形链表
+- [21 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+- [19 删除链表倒数第n个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+- [876 求链表的中间节点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+
 
 ## 1.  206反转链表
 
