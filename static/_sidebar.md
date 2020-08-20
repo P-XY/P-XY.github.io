@@ -21,7 +21,7 @@
     - [链表](CS-Basic/Data-Structure/linked-list.md)
     - [栈](CS-Basic/Data-Structure/stack.md)
     - [队列](CS-Basic/Data-Structure/queue.md)
-    - [字典](CS-Basic/Data-Structure/dictionary.md)
+    - [散列表](CS-Basic/Data-Structure/hash-table.md)
     - [树](CS-Basic/Data-Structure/tree.md)
     - [图](CS-Basic/Data-Structure/graph.md)
 - [**算法 🧮**](CS-Basic/Algorithm/readme.md)
