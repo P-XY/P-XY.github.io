@@ -42,7 +42,7 @@
 
 <h1 align="center"> 软件设计能力</h1>
 
-- [**编程范式👨🏻‍💻**]
+- **编程范式👨🏻‍💻**
     - [ 泛型编程](Software-Design/Programming-Paradigm/readme.md)
     - [ 函数范式](Software-Design/Programming-Paradigm/function-paradigm.md)
     -  面向对象编程
