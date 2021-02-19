@@ -60,7 +60,8 @@
 
   - [程序员的自我修养](Other/selfboot.md)
   - [高效学习](Other/study.md)
-  - [面试](Other/interview.md)
+  - [面试现场](Other/interview.md)
+  - [软技能](Other/soft-skills.md)
   - [工具](Other/tools.md)
   - [职业和生活](Other/life-and-career.md)
 
