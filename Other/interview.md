@@ -22,7 +22,7 @@ what ,why,how
 
 **前端面试资料**
 
-- [前端面试与进阶指南](https://www.cxymsg.com/guide/)
+- [前端面试与进阶指南](https://www.cxymsg.com/)
 - [2018大厂高级前端面试题汇总](https://github.com/Advanced-Frontend/Daily-Interview-Question/blob/master/datum/summary.md)
 - [腾讯前端面试](https://zhuanlan.zhihu.com/p/265147335)
 
