@@ -16,6 +16,18 @@
     - [React (二)](Front-End/Frame/react-2.md)
 
 
+<h1 align="center"> 架构能力</h1>
+
+- [**前端模块/组件化**](Architecture/component.md)
+
+
+<h1 align="center"> 工程能力</h1>
+
+- [**工具链 🥇**](Engineering/readme.md)
+- [持续集成](Engineering/tool-chain.md)
+- [发布系统](Engineering/optimization.md)
+
+
 <h1 align="center"> 编程能力</h1>
 
 - [**数据结构 🧱**]()
@@ -26,17 +38,6 @@
   
 - [**函数式编程（无状态）**]()
    
-
-<h1 align="center"> 架构能力</h1>
-
-
-
-<h1 align="center"> 工程能力</h1>
-
-- [**工程能力 🥇**](Front-End/Engineering/readme.md)
-    - [前端工具链](Front-End/Engineering/tool-chain.md)
-    - [前端性能调优 ](Front-End/Engineering/optimization.md)
-
 
 <h1 align="center"> 其他</h1>
 
