@@ -67,17 +67,19 @@
 
 ## 4. 页面性能    
 
-**使用Chrome 开发者工具做性能分析**
+**使用Chrome 开发者工具做性能分析**    
+
 暂时略
 
-
-**JavaScript对DOM树构建的影响**    
+**JavaScript对DOM树构建的影响**        
 
 HTML 解析器根据网络进程加载了多少数据，HTML 解析器便解析多少数据，而不是等整个 HTML 文档加载完成之后才开始解析的。具体过程为，网络进程通过管道给渲染进程传输字节流的时，渲染进程动态接收并且使用HTML解析器将字节流（Bytes）解析为DOM（具体过程略，可查看资料）。
 
 HTML 解析器在进行 DOM 解析过程中，遇到 JavaScript（script标签）就会停止DOM解析，执行JavaScript（若是通过src引用外部文件会去先下载，这很耗时，chrome对此做了预解析优化，当渲染引擎收到字节流之后，会开启一个预解析线程，用来分析 HTML 文件中包含的 JavaScript、CSS 等相关文件，解析到相关文件之后，预解析线程会提前下载这些文件。
 
 不过也有一些相关的策略来规避，比如使用 CDN 来加速 JavaScript 文件的加载，压缩 JavaScript 文件的体积。另外，如果 JavaScript 文件中没有操作 DOM 相关代码，就可以将该 JavaScript 脚本设置为异步加载，通过 async 或 defer 来标记代码，async 和 defer 虽然都是异步的，不过还有一些差异，使用 async 标志的脚本文件一旦加载完成，会立即执行；而使用了 defer 标记的脚本文件，需要在 DOMContentLoaded 事件之前执行。
+
+**CSS 对首次加载时的白屏时间的影响**      
 
 
 
