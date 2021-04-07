@@ -20,8 +20,7 @@
 
 - [中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 - [超完整的Chrome浏览器客户端调试大全](http://www.igeekbar.com/igeekbar/post/156.htm)
-- [猴子都能懂的Git入门](https://backlog.com/git-tutorial/cn/)
-- [Git CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Git CheatSheet](https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.pdf)
 - [vscode快捷键](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 - [Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html)
 - [GitBook简明教程](http://www.chengweiyang.cn/gitbook/)
@@ -44,4 +43,4 @@
 	
     ``$cd ~`` #回到/home目录
 	``$ls -a``# 会看到有一个.ssh文件夹，把里面的id_rsa.pub公钥添加到Github上
-    ``$ssh-T git@github.com``# 认证本地是否与Github完成连接
+    ``$ssh -T git@github.com``# 认证本地是否与Github完成连接
