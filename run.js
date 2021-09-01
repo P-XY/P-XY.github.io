@@ -1,5 +1,4 @@
 var exec = require('child_process').exec
-
 exec( 'git add .',()=>{
     console.log('git add .');
     exec('git commit -m"t',()=>{
@@ -12,4 +11,3 @@ exec( 'git add .',()=>{
         })
     })
 });
-
