@@ -4,46 +4,49 @@
   <meta charset="UTF-8">
   <title>Xiaoyu Pang's blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="前端自学博客" keywords="Xiaoyu pang;JavaScript;CSS;HTML;前端;学习;自学;浏览器">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="icon" href="https://avatars1.githubusercontent.com/u/19502724?s=460&u=b299062ccdcfd33a3ccdf86a52d26aac8e739397&v=4" />
-  <link href="https://cdn.bootcdn.net/ajax/libs/prism/1.20.0/themes/prism.css" rel="stylesheet">
 </head>
 <body>
-  <div id="app">加载中,请稍等 😀...</div>
+  <div id="app">极速加载中,请稍等 ...</div>
   <script>
+    // <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/prism/1.20.0/themes/prism.css" >
     window.$docsify = {
-      auto2top: true,
+      name: '',
       repo: '',
-      loadSidebar:'static/_sidebar.md',
-      maxLevel:6,
-      subMaxLevel: 0,
-      loadNavbar: 'static/_navbar.md',
-      homepage:'static/_index.md',
-      //plugins
+
+      //以下自定义博客配置
+      subMaxLevel: 4,
+
+      //侧边栏
+      loadSidebar:'summary.md', 
+      //全文检索，需要插件
       search: {
-        placeholder: '查找 🔍', // 全文检索，默认值
+        placeholder: '查找 🔍', // 
       },
-      //下一页
+      //分页，需要插件
       pagination: {
         previousText: '上一页🔺',
         nextText: '下一页🔻',
         crossChapter: true,
         crossChapterText: true,
       },
+      //页脚，需要插件
       footer: {
-        copy: '<span>Copyright &copy; 2020</span>',
+        copy: '<span>Copyright &copy; 2021</span>',
         auth: 'Xiaoyu Pang. All Rights Reserved.',
         pre: '',
         style: 'text-align: center;margin-top:50px;'
       },
+      //代码复制提示，需要插件
       copyCode: {
         buttonText : '复制代码',
         errorText  : 'Error',
         successText: '已复制到剪贴板'
       },
-      //自己写的插件
+      //跳转到 github 编辑，没有现成插件，docsify 提供了路由接口，需要自己动手写
       plugins:[
         function(hook,vm){
           hook.beforeEach( function(html){
@@ -56,7 +59,7 @@
       ]
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
