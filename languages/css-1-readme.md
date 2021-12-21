@@ -22,7 +22,6 @@
 
 ## 3. 参考手册
 - [MDN: CSS主题](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
-- 入门书籍：[精通 CSS（第三版）](https://book.douban.com/subject/30450258/)
 - 进阶书籍：[CSS 揭秘](https://book.douban.com/subject/30450258/)
   
 
