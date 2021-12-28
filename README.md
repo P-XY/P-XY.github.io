@@ -5,7 +5,7 @@
     <div style="font-size: 24px;"> Xiaoyu Pang </div><br/>
     <div>
     📍 Shenzhen,China &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/>
-    💌 <a href=mailto:xiaoyu_pang@qq.com>xiaoyu_pang@qq.com </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp    <br/>
+    💌 <a href=mailto:xiaoyu_pang@qq.com>xiaoyu-pang@qq.com </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp    <br/>
     🐵 <a href="https://github.com/xiaoyupang" target="_blank"> https://github.com/xiaoyupang</a>
    </div>
 

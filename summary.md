@@ -1,9 +1,10 @@
 
 - **语言**
     - [HTML](languages/html.md)
-    - [CSS](languages/)
+    - [CSS](languages/css.md)
     - [JavaScript](languages/)   
     - [Node.js](languages/)
+    - [TypeScript](languages/)
 
 - **原理**
     - [Browser](principles/ "浏览器原理")
