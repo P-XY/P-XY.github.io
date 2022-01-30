@@ -1,6 +1,5 @@
 # 程序员的自我修养
 
-
 ## 1. 入行须知
 - [What are some of the most basic things every programmer should know?](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
 - [《97 Things Every Programmer Should Know》](https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/index.html)

@@ -1,8 +1,4 @@
-<div align="center">
-    <h1 >人生有限公司 </h1>  
-</div>
-
-# 职业发展
+# 职业生涯
 
 - [技术路线的选择重要但不具有决定性](https://blog.csdn.net/myan/article/details/3247071)
 - [一个程序员的成长之路](https://github.com/fouber/blog/issues/41)
