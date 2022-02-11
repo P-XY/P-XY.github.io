@@ -12,7 +12,7 @@
 - **编程与架构**
     - [数据结构]()
     - [算法]()
-    - [类型系统]()
+    - [类型系统](architecture/types.md)
     - [编程范式]()
     - [设计模式](architecture/design-patterns.md)
     - [设计原则](architecture/design-principles.md)
