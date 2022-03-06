@@ -6,22 +6,20 @@
     - [HTML](languages/html.md)
     - [CSS](languages/css.md)
     - [JavaScript](languages/javascript)   
-    - [TypeScript](languages/typescript.md)
     - [Node.js](languages/node.js.md)
+    - [TypeScript](languages/typescript.md)
 
 - [**编程篇**](programming/index.md)
     - [数据结构和算法](programming/data-structure-and-algorithms)
+    - [设计模式](programming/design-patterns.md)
     - [类型系统](programming/types.md)
     - [编程范式](programming/programming-paradigm.md)
-    - [设计模式](programming/design-patterns.md)
     - [重构](programming/refactoring.md)
 
 - [**领域篇**](domain/index.md)
     - [浏览器原理](domain/browser.md)
     - [HTTP 协议](domain/http.md)
     - [React 原理](domain/react.md)
-
-- [**架构篇**]()
 
 - [**工程篇**]()
     - [代码规范]()
