@@ -1,7 +1,5 @@
-<div align="center">
-    <p style="font-size: 24px;">Web 前端笔记</p>
-</div>
 
+- [**首页**](/)
 - [**语言篇**](languages/index.md)
     - [HTML](languages/html.md)
     - [CSS](languages/css.md)
